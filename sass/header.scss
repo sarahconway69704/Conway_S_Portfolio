@@ -9,10 +9,12 @@ body
 }
 .hidden { display: none; }
 
-#header
+
+#desktopNav
 {
-    background-color: #ffff66;
+    display: none;
 }
+
 
 
 #logo
@@ -94,6 +96,8 @@ ul li
     position: absolute;
     float: left;
     margin: 0;
+    width: 505px;
+     height: 250px;
 
 }
 
@@ -133,6 +137,283 @@ ul li
     font-size: 1.5em;
     margin-left: 10px;
 }
+
+
+}
+
+@media screen and (min-width: 46.874em) and (max-width: 64em){
+
+    body
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .hidden { display: none; }
+    
+  
+    
+    
+    #logo
+    {
+        margin: 0;
+        margin-left: 22em;
+        float: left;
+    }
+    
+    
+    
+    #hamMenu
+    {
+     display: none;
+    }
+    
+    
+    .menu
+    {
+    
+          position: absolute;
+        background-color:#92cfa7;
+        z-index: 1;
+        width: 100px;
+        margin-left: 22em;
+        margin-top: 4.1em;
+        font-family: 'ltc-bodoni-175', serif;
+        font-weight: 400;
+        font-style: normal;
+        padding-bottom: 10px;
+        display: none;
+    }
+    
+    
+    .show
+    {
+        display: block;
+    }
+    
+    #heroImageDiv
+    {
+        position: absolute;
+        margin: 0;
+        margin-top: 330px;
+    }
+    
+    #heroImage
+    {
+        position: absolute;
+        float: left;
+        margin: 0;
+        width: 1024px;
+        height: 500px;
+    
+    }
+    
+    .myname
+    {
+        position: absolute;
+        width: 400px;
+        text-align: center;
+        font-family: 'copperplate', serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #92cfa7;
+        font-size: 4em;
+    }
+    
+    #myfirstname
+    {
+        margin-left: 300px;
+        margin-top: 70px;
+    }
+    
+    #mylastname
+    {
+        margin-top: 130px;
+        margin-left: 300px;
+    }
+    
+    #titles
+    {
+        position: absolute;
+        width: 700px;
+        font-family: ltc-bodoni-175,serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #92cfa7;
+        margin-top: 400px;
+        font-size: 2em;
+        margin-left: 180px;
+    }
+
+    #desktopNav
+    {
+        float: left;
+        position: absolute;
+        margin-top: 240px;
+        margin-left: 250px;
+    }
+
+    .menuDesktop li a
+    {
+        text-decoration: none;
+        font-family: ltc-bodoni-175,serif;
+        font-weight: 400;
+        font-style: normal;
+        padding-right: 50px;
+        font-size: 1.5em;
+        color: #377254;
+    }
+
+    .menuDesktop li a:hover
+    {
+        color: #92cfa7;
+    }
+
+    .menuDesktop
+    {
+        list-style-type: none;
+    }
+
+    .menuDesktop li
+    {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 64em){
+
+    body
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .hidden { display: none; }
+    
+  
+    
+    
+    #logo
+    {
+        margin: 0;
+        margin-left: 30em;
+        float: left;
+    }
+    
+    
+    
+    #hamMenu
+    {
+     display: none;
+    }
+    
+    
+    .menu
+    {
+    
+          position: absolute;
+        background-color:#92cfa7;
+        z-index: 1;
+        width: 100px;
+        margin-left: 22em;
+        margin-top: 4.1em;
+        font-family: 'ltc-bodoni-175', serif;
+        font-weight: 400;
+        font-style: normal;
+        padding-bottom: 10px;
+        display: none;
+    }
+    
+    
+    .show
+    {
+        display: block;
+    }
+    
+    #heroImageDiv
+    {
+        position: absolute;
+        margin: 0;
+        margin-top: 330px;
+    }
+    
+    #heroImage
+    {
+        position: absolute;
+        float: left;
+        margin: 0;
+        width: 1280px;
+        height: 700px;
+    
+    }
+    
+    .myname
+    {
+        position: absolute;
+        width: 600px;
+        text-align: center;
+        font-family: 'copperplate', serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #92cfa7;
+        font-size: 6em;
+    }
+    
+    #myfirstname
+    {
+        margin-left: 330px;
+        margin-top: 120px;
+    }
+    
+    #mylastname
+    {
+        margin-top: 200px;
+        margin-left: 330px;
+    }
+    
+    #titles
+    {
+        position: absolute;
+        width: 1280px;
+        font-family: ltc-bodoni-175,serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #92cfa7;
+        margin-top: 520px;
+        font-size: 4em;
+    }
+
+    #desktopNav
+    {
+        float: left;
+        position: absolute;
+        margin-top: 240px;
+        margin-left: 380px;
+    }
+
+    .menuDesktop li a
+    {
+        text-decoration: none;
+        font-family: ltc-bodoni-175,serif;
+        font-weight: 400;
+        font-style: normal;
+        padding-right: 50px;
+        font-size: 1.5em;
+        color: #377254;
+    }
+
+    .menuDesktop li a:hover
+    {
+        color: #92cfa7;
+    }
+
+    .menuDesktop
+    {
+        list-style-type: none;
+    }
+
+    .menuDesktop li
+    {
+        display: inline;
+    }
 
 
 }
