@@ -1,0 +1,23 @@
+<svg id="menu" xmlns="http://www.w3.org/2000/svg" width="261.87" height="109.87" viewBox="0 0 261.87 109.87">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5cbf8c;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+        stroke-width: 12.87px;
+      }
+
+      .cls-2 {
+        fill: none;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="menu_bk" class="cls-1" x="6.435" y="6.435" width="249" height="97"/>
+  <path id="top" class="cls-2" d="M232,328.994v-5.988H407v5.988H232Z" transform="translate(-188.565 -289.565)"/>
+  <path id="mid" class="cls-2" d="M271.388,347.994v-5.988h97.755v5.988H271.388Z" transform="translate(-188.565 -289.565)"/>
+  <path id="bot" class="cls-2" d="M231,366.994v-5.988H406v5.988H231Z" transform="translate(-188.565 -289.565)"/>
+</svg>
