@@ -1,0 +1,57 @@
+@media screen and (max-width: 46.874em){
+
+#works
+{
+    float: left;
+    height: 400px;
+    margin-top: 300px;
+}
+
+#illustrations
+{
+    float: left;
+}
+
+#illTitle
+{
+    font-family: 'copperplate', serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #92cfa7;
+    margin-left: 150px;
+    
+}
+
+#gifProject
+{
+    box-shadow: 20px 5px 20px 3px #5d806e;
+}
+
+#gifProject:hover
+{
+    opacity: 0.5;
+}
+
+#sip
+{
+    box-shadow: 20px 10px 20px 3px #5d806e;
+    margin-top: 10px; 
+}
+
+#sip:hover
+{
+    opacity: 0.5;
+}
+
+#eyeball
+{
+    box-shadow: 20px 10px 20px 3px #5d806e;
+    margin-top: 10px; 
+}
+
+#eyeball:hover
+{
+    opacity: 0.5;
+}
+
+}
