@@ -1,0 +1,75 @@
+@media screen and (max-width: 46.874em){
+
+
+#vid
+{
+    margin-top: 30px;
+    height: 500px;
+}
+
+#demoReel
+{
+    margin-top: 30px;
+}
+
+}
+
+
+@media screen and (min-width: 46.874em) and (max-width: 64em){
+
+#portfolio
+{
+    float:left;
+}
+
+    #vid
+    {
+        margin-top: 30px;
+        height: 500px;
+        margin-left: 10px;
+    }
+    
+    #demoReel
+    {
+        margin-top: 30px;
+    }  
+
+    video
+    {
+        width: 1000px;
+        height: 500px;
+    }
+
+}
+
+
+@media screen and (min-width: 64em){
+
+#portfolio
+{
+    float:left;
+    margin: 0 auto;
+}
+
+#vid
+{
+
+        height: 500px;
+        margin: 0 auto;
+
+ }
+    
+#demoReel
+    {
+        margin-top: 100px;
+    }  
+
+ video
+    {
+        width: 1280px;
+        height: 700px;
+        margin: 0 auto;
+    }
+
+
+}
