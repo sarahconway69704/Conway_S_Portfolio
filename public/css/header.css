@@ -1,4 +1,9 @@
 @media screen and (max-width: 46.874em) {
+  #header {
+    float: left;
+    height: 600px;
+  }
+
   body {
     width: 100%;
     margin: 0 auto;

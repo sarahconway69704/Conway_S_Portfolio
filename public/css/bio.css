@@ -1,0 +1,438 @@
+@media screen and (max-width: 46.874em) {
+  #bio {
+    float: left;
+  }
+
+  #bioTitle {
+    width: 300px;
+    background-color: red;
+    margin-left: 100px;
+  }
+
+  #shecan {
+    float: left;
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #92cfa7;
+  }
+
+  #do {
+    float: left;
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #377254;
+    margin-left: 5px;
+    text-decoration-line: underline;
+  }
+
+  #things {
+    float: left;
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #92cfa7;
+    margin-left: 5px;
+  }
+
+  #womb {
+    width: 250px;
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 90px;
+    color: #28533d;
+  }
+
+  #skip {
+    width: 250px;
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 90px;
+    color: #28533d;
+  }
+
+  #homecity {
+    width: 250px;
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 90px;
+    color: #28533d;
+  }
+
+  #program {
+    width: 250px;
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 90px;
+    color: #28533d;
+  }
+
+  #fouryears {
+    width: 250px;
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 90px;
+    color: #28533d;
+  }
+
+  #skills {
+    background-color: #28533d;
+    float: left;
+    width: 460px;
+    margin: 0 auto;
+    padding-top: 20px;
+    box-shadow: 0px 20px 20px 3px #5d806e;
+    margin-top: 60px;
+  }
+
+  .skillcuts {
+    float: left;
+    margin-left: 60px;
+  }
+
+  #brandIcon {
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .skillTitles {
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #92cfa7;
+  }
+
+  .skillcuts:hover {
+    color: white;
+    opacity: 0.5;
+  }
+
+  #motionGraphics {
+    margin-left: 90px;
+  }
+
+  #webDesign {
+    margin-left: 76px;
+  }
+
+  #videoediting {
+    margin-left: 97px;
+  }
+
+  #cooking {
+    margin-left: 120px;
+  }
+}
+@media screen and (min-width: 46.874em) and (max-width: 64em) {
+  #bio {
+    float: left;
+    margin-top: 600px;
+  }
+
+  #bioText {
+    margin-left: 250px;
+  }
+
+  #bioTitle {
+    width: 500px;
+    background-color: red;
+    margin-left: 350px;
+  }
+
+  #shecan {
+    float: left;
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #92cfa7;
+    font-size: 2em;
+  }
+
+  #do {
+    float: left;
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #377254;
+    margin-left: 5px;
+    text-decoration-line: underline;
+    font-size: 2em;
+  }
+
+  #things {
+    float: left;
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #92cfa7;
+    margin-left: 5px;
+    font-size: 2em;
+  }
+
+  #womb {
+    width: 330px;
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 100px;
+    color: #28533d;
+    font-size: 1.5em;
+  }
+
+  #skip {
+    width: 250px;
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 100px;
+    color: #28533d;
+    font-size: 1.5em;
+  }
+
+  #homecity {
+    width: 350px;
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 100px;
+    color: #28533d;
+    font-size: 1.5em;
+  }
+
+  #program {
+    width: 350px;
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 100px;
+    color: #28533d;
+    font-size: 1.5em;
+  }
+
+  #fouryears {
+    width: 300px;
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 100px;
+    color: #28533d;
+    font-size: 1.5em;
+  }
+
+  #skills {
+    background-color: #28533d;
+    float: left;
+    width: 800px;
+    margin: 0;
+    padding-top: 20px;
+    box-shadow: 0px 20px 20px 3px #5d806e;
+    margin-top: 30px;
+    margin-left: 110px;
+  }
+
+  .skillcuts {
+    float: left;
+    margin-left: 60px;
+  }
+
+  #brandIcon {
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .skillTitles {
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #92cfa7;
+  }
+
+  .skillcuts:hover {
+    color: white;
+    opacity: 0.5;
+  }
+
+  #videoediting {
+    margin-left: 65px;
+  }
+
+  #cooking {
+    margin-left: 110px;
+  }
+
+  #coding {
+    margin-left: 85px;
+  }
+
+  #videoIcon {
+    margin-left: 10px;
+  }
+
+  #packageIcon {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 64em) {
+  #bio {
+    float: left;
+    margin-top: 800px;
+  }
+
+  #bioText {
+    margin-left: 250px;
+  }
+
+  #bioTitle {
+    width: 500px;
+    background-color: red;
+    margin-left: 350px;
+  }
+
+  #shecan {
+    float: left;
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #92cfa7;
+    font-size: 2em;
+  }
+
+  #do {
+    float: left;
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #377254;
+    margin-left: 5px;
+    text-decoration-line: underline;
+    font-size: 2em;
+  }
+
+  #things {
+    float: left;
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #92cfa7;
+    margin-left: 5px;
+    font-size: 2em;
+  }
+
+  #womb {
+    width: 500px;
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 100px;
+    color: #28533d;
+    font-size: 1.5em;
+    float: left;
+  }
+
+  #skip {
+    width: 250px;
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 100px;
+    color: #28533d;
+    font-size: 1.5em;
+  }
+
+  #homecity {
+    width: 550px;
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 100px;
+    color: #28533d;
+    font-size: 1.5em;
+  }
+
+  #program {
+    width: 500px;
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 100px;
+    color: #28533d;
+    font-size: 1.5em;
+  }
+
+  #fouryears {
+    width: 500px;
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 100px;
+    color: #28533d;
+    font-size: 1.5em;
+  }
+
+  #skills {
+    background-color: #28533d;
+    float: left;
+    width: 1100px;
+    margin: 0;
+    padding-top: 20px;
+    box-shadow: 0px 20px 20px 3px #5d806e;
+    margin-top: 30px;
+    margin-left: 90px;
+  }
+
+  .skillcuts {
+    float: left;
+    margin-left: 60px;
+  }
+
+  .skillIcon {
+    width: 100px;
+    height: 100px;
+  }
+
+  #brandIcon {
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .skillTitles {
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #92cfa7;
+    font-size: 1.5em;
+  }
+
+  .skillcuts:hover {
+    color: white;
+    opacity: 0.5;
+  }
+
+  #videoediting {
+    margin-left: 65px;
+  }
+
+  #cooking {
+    margin-left: 110px;
+  }
+
+  #coding {
+    margin-left: 85px;
+  }
+
+  #videoIcon {
+    margin-left: 10px;
+  }
+
+  #packageIcon {
+    margin-left: 10px;
+  }
+}
+
+/*# sourceMappingURL=bio.css.map */

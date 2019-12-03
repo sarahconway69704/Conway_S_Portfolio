@@ -1,1 +1,24 @@
-<svg id="brand_design" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 617.85 424.71"><defs><style>.cls-1{fill:#fff;}.cls-1,.cls-2{stroke:#231f20;stroke-miterlimit:10;stroke-width:3px;}.cls-2{fill:none;}</style></defs><title>brand_design_logo</title><polygon id="large-rec" class="cls-1" points="181.46 396.84 1.5 396.84 1.5 2.79 260.58 2.79 325.73 60.2 325.73 392.19 181.46 396.84"/><polygon id="small-rec" class="cls-1" points="184.04 261.87 184.04 423.21 616.35 423.21 616.35 262.9 184.04 261.87"/><line id="text-line-s2" class="cls-2" x1="239.93" y1="360.38" x2="446.74" y2="360.38"/><line id="text-line-s" class="cls-2" x1="239.63" y1="387.53" x2="509.57" y2="387.53"/><circle id="logo-s" class="cls-2" cx="254.37" cy="306.08" r="24.82"/><circle id="logo-l" class="cls-2" cx="53.19" cy="55.75" r="24.82"/><line id="text-line-l" class="cls-2" x1="48.04" y1="112.94" x2="145.78" y2="112.94"/><line id="text-line-l-2" data-name="text-line-l" class="cls-2" x1="49.59" y1="147.07" x2="209.38" y2="147.07"/><polygon id="fold" class="cls-2" points="260.58 2.79 237.31 105.18 325.73 60.2 260.58 2.79"/></svg>
+<svg id="brand_design" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 617.85 424.71"><defs>
+<style>.cls-1{fill:#fff;}.cls-1,.cls-2{stroke:#231f20;stroke-miterlimit:10;stroke-width:3px;}.cls-2{fill:none;}</style>
+</defs><title>brand_design_logo</title>
+
+
+
+<polygon id="large-rec" class="cls-1" points="181.46 396.84 1.5 396.84 1.5 2.79 260.58 2.79 325.73 60.2 325.73 392.19 181.46 396.84"/>
+
+
+
+<polygon id="small-rec" class="cls-1" points="184.04 261.87 184.04 423.21 616.35 423.21 616.35 262.9 184.04 261.87"/>
+<line id="text-line-s2" class="cls-2" x1="239.93" y1="360.38" x2="446.74" y2="360.38"/>
+<line id="text-line-s" class="cls-2" x1="239.63" y1="387.53" x2="509.57" y2="387.53"/>
+<circle id="logo-s" class="cls-2" cx="254.37" cy="306.08" r="24.82"/>
+<circle id="logo-l" class="cls-2" cx="53.19" cy="55.75" r="24.82"/>
+<line id="text-line-l" class="cls-2" x1="48.04" y1="112.94" x2="145.78" y2="112.94"/>
+<line id="text-line-l-2" data-name="text-line-l" class="cls-2" x1="49.59" y1="147.07" x2="209.38" y2="147.07"/>
+<polygon id="fold" class="cls-2" points="260.58 2.79 237.31 105.18 325.73 60.2 260.58 2.79"/>
+
+
+
+
+
+</svg>
