@@ -87,7 +87,7 @@
     width: 460px;
     margin: 0 auto;
     padding-top: 20px;
-    box-shadow: 0px 20px 20px 3px #5d806e;
+    box-shadow: 10px 10px 20px 0px #5d806e;
     margin-top: 60px;
     margin-left: 20px;
     padding-bottom: 20px;
@@ -233,7 +233,7 @@
     width: 800px;
     margin: 0;
     padding-top: 20px;
-    box-shadow: 0px 20px 20px 3px #5d806e;
+    box-shadow: 10px 10px 20px 0px #5d806e;
     margin-top: 30px;
     margin-left: 110px;
     padding-bottom: 20px;
@@ -384,7 +384,7 @@
     width: 1100px;
     margin: 0;
     padding-top: 20px;
-    box-shadow: 0px 20px 20px 3px #5d806e;
+    box-shadow: 10px 10px 20px 0px #5d806e;
     margin-top: 30px;
     margin-left: 90px;
   }
