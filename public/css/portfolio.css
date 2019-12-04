@@ -7,6 +7,7 @@
 
   #illustrations {
     float: left;
+    margin-bottom: 50px;
   }
 
   #illTitle {
@@ -41,6 +42,473 @@
 
   #eyeball:hover {
     opacity: 0.5;
+  }
+
+  #videoWork {
+    margin: 0 auto;
+    float: left;
+    margin-bottom: 50px;
+  }
+
+  #vidTitle {
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #92cfa7;
+    margin-left: 200px;
+  }
+
+  #match {
+    box-shadow: 20px 10px 20px 3px #5d806e;
+    margin-top: 10px;
+  }
+
+  #match:hover {
+    opacity: 0.5;
+  }
+
+  #nfl {
+    box-shadow: 20px 10px 20px 3px #5d806e;
+    margin-top: 10px;
+  }
+
+  #nfl:hover {
+    opacity: 0.5;
+  }
+
+  #reorganize {
+    box-shadow: 20px 10px 20px 3px #5d806e;
+    margin-top: 10px;
+  }
+
+  #reorganize:hover {
+    opacity: 0.5;
+  }
+
+  #graphicWork {
+    float: left;
+  }
+
+  #graphTitle {
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #92cfa7;
+    margin-left: 150px;
+  }
+
+  #ophone {
+    box-shadow: 20px 10px 20px 3px #5d806e;
+    margin-top: 10px;
+  }
+
+  #ophone:hover {
+    opacity: 0.5;
+  }
+
+  #freestand:hover {
+    opacity: 0.5;
+  }
+
+  #bluetooth:hover {
+    opacity: 0.5;
+  }
+
+  #freestand {
+    box-shadow: 20px 10px 20px 3px #5d806e;
+    margin-top: 10px;
+  }
+
+  #bluetooth {
+    box-shadow: 20px 10px 20px 3px #5d806e;
+    margin-top: 10px;
+  }
+
+  .workText {
+    position: absolute;
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #92cfa7;
+    background-color: black;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 46.874em) and (max-width: 64em) {
+  #works {
+    float: left;
+    height: 400px;
+    margin-top: 100px;
+  }
+
+  #illustrations {
+    float: left;
+    margin-bottom: 50px;
+    width: 1000px;
+  }
+
+  #illTitle {
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #92cfa7;
+    margin-left: 380px;
+    font-size: 2em;
+  }
+
+  #lips {
+    float: left;
+  }
+
+  #wine {
+    float: left;
+    margin-left: 10px;
+  }
+
+  #space {
+    float: left;
+    position: absolute;
+    margin-top: 260px;
+  }
+
+  #gifProject {
+    box-shadow: 10px 10px 20px 0px #5d806e;
+  }
+
+  #gifProject:hover {
+    opacity: 0.5;
+  }
+
+  #sip {
+    box-shadow: 10px 10px 20px 0px #5d806e;
+    width: 490px;
+  }
+
+  #sip:hover {
+    opacity: 0.5;
+  }
+
+  #eyeball {
+    box-shadow: 10px 10px 20px 0px #5d806e;
+    margin-top: 10px;
+  }
+
+  #eyeball:hover {
+    opacity: 0.5;
+  }
+
+  #videoWork {
+    margin: 0 auto;
+    float: left;
+    margin-bottom: 50px;
+    width: 1000px;
+    margin-top: 400px;
+  }
+
+  #vidTitle {
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #92cfa7;
+    font-size: 2em;
+    margin-left: 460px;
+  }
+
+  #matchstick {
+    float: left;
+  }
+
+  #sportsnet {
+    float: left;
+    position: absolute;
+    margin-left: 520px;
+  }
+
+  #organ {
+    float: left;
+  }
+
+  #match {
+    box-shadow: 10px 10px 20px 0px #5d806e;
+    margin-top: 10px;
+  }
+
+  #match:hover {
+    opacity: 0.5;
+  }
+
+  #nfl {
+    box-shadow: 10px 10px 20px 0px #5d806e;
+    margin-top: 10px;
+  }
+
+  #nfl:hover {
+    opacity: 0.5;
+  }
+
+  #reorganize {
+    box-shadow: 10px 10px 20px 0px #5d806e;
+    margin-top: 10px;
+  }
+
+  #reorganize:hover {
+    opacity: 0.5;
+  }
+
+  #graphicWork {
+    float: left;
+    width: 1000px;
+    margin-top: 100px;
+  }
+
+  #graphTitle {
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #92cfa7;
+    margin-left: 380px;
+    font-size: 2em;
+  }
+
+  #orbit {
+    float: left;
+  }
+
+  #arbora {
+    float: left;
+    position: absolute;
+    margin-left: 515px;
+  }
+
+  #tempus {
+    float: left;
+  }
+
+  #ophone {
+    box-shadow: 10px 10px 20px 0px #5d806e;
+    margin-top: 10px;
+  }
+
+  #ophone:hover {
+    opacity: 0.5;
+  }
+
+  #freestand:hover {
+    opacity: 0.5;
+  }
+
+  #bluetooth:hover {
+    opacity: 0.5;
+  }
+
+  #freestand {
+    box-shadow: 10px 10px 20px 0px #5d806e;
+    margin-top: 10px;
+  }
+
+  #bluetooth {
+    box-shadow: 10px 10px 20px 0px #5d806e;
+    margin-top: 10px;
+  }
+
+  .workText {
+    position: absolute;
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #92cfa7;
+    background-color: black;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 64em) {
+  #works {
+    float: left;
+    height: 400px;
+    margin-top: 400px;
+  }
+
+  #illustrations {
+    float: left;
+    margin-bottom: 50px;
+    width: 1000px;
+    margin-left: 130px;
+  }
+
+  #illTitle {
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #92cfa7;
+    margin-left: 300px;
+    font-size: 3em;
+  }
+
+  #lips {
+    float: left;
+  }
+
+  #wine {
+    float: left;
+    margin-left: 10px;
+  }
+
+  #space {
+    float: left;
+    position: absolute;
+    margin-top: 260px;
+  }
+
+  #gifProject {
+    box-shadow: 10px 10px 20px 0px #5d806e;
+  }
+
+  #gifProject:hover {
+    opacity: 0.5;
+  }
+
+  #sip {
+    box-shadow: 10px 10px 20px 0px #5d806e;
+    width: 490px;
+  }
+
+  #sip:hover {
+    opacity: 0.5;
+  }
+
+  #eyeball {
+    box-shadow: 10px 10px 20px 0px #5d806e;
+    margin-top: 10px;
+  }
+
+  #eyeball:hover {
+    opacity: 0.5;
+  }
+
+  #videoWork {
+    margin: 0 auto;
+    float: left;
+    margin-bottom: 50px;
+    width: 1000px;
+    margin-top: 400px;
+    margin-left: 130px;
+  }
+
+  #vidTitle {
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #92cfa7;
+    font-size: 3em;
+    margin-left: 400px;
+  }
+
+  #matchstick {
+    float: left;
+  }
+
+  #sportsnet {
+    float: left;
+    position: absolute;
+    margin-left: 520px;
+  }
+
+  #organ {
+    float: left;
+  }
+
+  #match {
+    box-shadow: 10px 10px 20px 0px #5d806e;
+    margin-top: 10px;
+  }
+
+  #match:hover {
+    opacity: 0.5;
+  }
+
+  #nfl {
+    box-shadow: 10px 10px 20px 0px #5d806e;
+    margin-top: 10px;
+  }
+
+  #nfl:hover {
+    opacity: 0.5;
+  }
+
+  #reorganize {
+    box-shadow: 10px 10px 20px 0px #5d806e;
+    margin-top: 10px;
+  }
+
+  #reorganize:hover {
+    opacity: 0.5;
+  }
+
+  #graphicWork {
+    float: left;
+    width: 1000px;
+    margin-top: 100px;
+    margin-left: 130px;
+  }
+
+  #graphTitle {
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #92cfa7;
+    margin-left: 290px;
+    font-size: 3em;
+  }
+
+  #orbit {
+    float: left;
+  }
+
+  #arbora {
+    float: left;
+    position: absolute;
+    margin-left: 515px;
+  }
+
+  #tempus {
+    float: left;
+  }
+
+  #ophone {
+    box-shadow: 10px 10px 20px 0px #5d806e;
+    margin-top: 10px;
+  }
+
+  #ophone:hover {
+    opacity: 0.5;
+  }
+
+  #freestand:hover {
+    opacity: 0.5;
+  }
+
+  #bluetooth:hover {
+    opacity: 0.5;
+  }
+
+  #freestand {
+    box-shadow: 10px 10px 20px 0px #5d806e;
+    margin-top: 10px;
+  }
+
+  #bluetooth {
+    box-shadow: 10px 10px 20px 0px #5d806e;
+    margin-top: 10px;
+  }
+
+  .workText {
+    position: absolute;
+    font-family: "copperplate", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #92cfa7;
+    background-color: black;
+    padding: 10px;
   }
 }
 
