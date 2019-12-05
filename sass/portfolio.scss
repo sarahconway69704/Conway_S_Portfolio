@@ -1,5 +1,19 @@
 @media screen and (max-width: 46.874em){
 
+    .popover { 
+        display: none;
+        position: absolute;
+        top: 18%;
+        left: 110%;
+        background-color: orange;
+        width: 350px;
+        z-index: 1;
+        border-radius: 8px;
+        padding: 4px;
+      }
+      
+      .show-popover { display: block; }
+
 #works
 {
     float: left;
