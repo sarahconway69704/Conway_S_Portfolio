@@ -148,7 +148,7 @@
          
           <div id="lips">
             <h3 class="workText">Mwah</h3>
-              <img id="gifProject" src="images/gif_project.gif" width="500" height="260">
+              <img id="gifProject" src="images/gif_project.gif" width="500" height="260" data-target="1">
           </div>
 
           <div id="wine">
@@ -200,20 +200,38 @@
             <h3 class="workText">Tempus</h3>
             <img id="bluetooth" src="images/tempus.png"  width="505" height="500">
         </div>
-
-
-
       </div>
-      
-
-
-
-
     </div>
-    
-
   </section>
    
+    <div class="popover">
+        <img src="" class="workImage"></p>
+        <p class="Title"></p>
+        <p class="Description"></p>
+        <p class="madeWith"></p>
+    </div>
+
+    <form action="/php/data/contact.php" method="post">
+
+      <h1>Contact Me</h1>
+      
+      <label for="f-name-field">First Name</label>
+      <input id="f-name-field" name="fname" type="text" placeholder="First Name">
+      
+      <label for="l-name-field">Last Name</label>
+      <input id="l-name-field" name="lname" type="text" placeholder="Last Name">
+      
+      <label for="email-field">Email</label>
+      <input id="email-field" name="email" type="email" placeholder="Email">
+      
+      <label for="message-field">Message</label>
+      <textarea id="message-field" name="message"></textarea>
+      
+      <button type="submit">Submit</button>
+      
+          </form>
+    
+
     <script src="js/main.js"></script>
 </body>
 </html>
