@@ -33,6 +33,7 @@
   .menu {
     position: absolute;
     background-color: #92cfa7;
+    border-radius: 5px;
     z-index: 1;
     width: 100px;
     margin-left: 22em;
