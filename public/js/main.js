@@ -2,7 +2,7 @@
 
   console.log('fired');
   
-    const activate = document.getElementById("gifProject");
+    const activate = document.querySelector('.active');
     const popOver = document.querySelector('.popover');
     const form = document.querySelector('form'), submit = form.querySelector('.submit-button');
 
@@ -58,8 +58,6 @@
 
 
 
-
-
     function buildPopover(tbl_work, el) {
           popOver.querySelector(".workImage").src = `images/${tbl_work.Image}`;
           popOver.querySelector(".title").textContent = `Title: ${tbl_work.Title}`;
@@ -67,8 +65,12 @@
           popOver.querySelector(".madeWith").textContent = `Made with: ${tbl_work.Madewith}`;
 
           popOver.style.display = "block";
-        
+          
     }
+
+
+
+
 
     function fetchData() {
         let targetEl = this, 
