@@ -25,19 +25,19 @@
 
     <div id="desktopNav">
         <ul class="menuDesktop">
-				<li><a href="#">Home</a></li>
-  				<li><a href="#">About</a></li>
-  				<li><a href="#">Work</a></li>
-  				<li><a href="#">Contact</a></li>
+				<li><a href="">Home</a></li>
+  				<li><a href="/#bio">About</a></li>
+  				<li><a href="/#portfolio">Work</a></li>
+  				<li><a href="/#contactForm">Contact</a></li>
 			</ul>
     </div>
 
 			<div class="dropdown">
 			<ul class="menu">
 				<li><a href="#">Home</a></li>
-  				<li><a href="#">About</a></li>
-  				<li><a href="#">Work</a></li>
-  				<li><a href="#">Contact</a></li>
+  				<li><a href="/#bio">About</a></li>
+  				<li><a href="/#portfolio">Work</a></li>
+  				<li><a href="/#contactForm">Contact</a></li>
 			</ul>
       </div>
       
@@ -211,6 +211,7 @@
       <p class="title"></p>
       <p class="description"></p>
       <p class="madeWith"></p>
+      <a href="https://www.youtube.com/channel/UCdqrhIYw9gPv6ygbi51lSlw?view_as=subscriber" class="link"></a>
     </div>
     </article>
 
@@ -223,19 +224,22 @@
 
     <form action="/php/data/contact.php" method="post">
 
-      <h1>Contact Me</h1>
+      <h3 id=formHeader>Want to compare stirfry recipies? 
+          Or comission me?
+          Just say hi?
+          </h3>
       
-      <label for="f-name-field">First Name</label>
+      <label for="f-name-field" id="firstn">First Name</label>
       <input id="f-name-field" name="fname" type="text" placeholder="First Name">
       
-      <label for="l-name-field">Last Name</label>
+      <label for="l-name-field" id="lastn">Last Name</label>
       <input id="l-name-field" name="lname" type="text" placeholder="Last Name">
       
-      <label for="email-field">Email</label>
+      <label for="email-field" id="maile">Email</label>
       <input id="email-field" name="email" type="email" placeholder="Email">
       
-      <label for="message-field">Message</label>
-      <textarea id="message-field" name="message"></textarea>
+      <label for="message-field" id="mess">Message</label>
+      <textarea id="message-field" name="message" rows="10" placeholder="Speak Your Truth!"></textarea>
       
       <button type="submit">Submit</button>
       

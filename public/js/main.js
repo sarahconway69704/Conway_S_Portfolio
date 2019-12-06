@@ -5,6 +5,10 @@
     const melly = document.querySelector('.showit');
     const popOver = document.querySelector('.popover');
     const form = document.querySelector('form'), submit = form.querySelector('.submit-button');
+    //const Bio = document.getElementById("bioText");
+   // function scrollOp(){
+
+   // }
 
     function handleMail(event) {
         event.preventDefault();
@@ -63,15 +67,15 @@
           popOver.querySelector(".title").textContent = tbl_work.Title;
           popOver.querySelector(".description").textContent = tbl_work.Description;
           popOver.querySelector(".madeWith").textContent = `Made with: ${tbl_work.Madewith}`;
+          popOver.querySelector(".link").textContent = tbl_work.links;
 
-          //popOver.style.display = "block";
           popOver.classList.add('show-popover');
   
     }
 
 
 
-
+    
     function fetchData() {
         let targetEl = this, 
           url = `/portfolioData/${this.dataset.target}`;
@@ -87,12 +91,17 @@
 
 
 
+
+
+      
       document.querySelectorAll('.showit').forEach(item => {
         item.addEventListener("click", fetchData)});
-
+        
       form.addEventListener('submit', handleMail);
+     
       popOver.querySelector('.close').addEventListener('click', function() {
         popOver.classList.remove('show-popover');
     });
+    
       
 })(); 
