@@ -1,5 +1,18 @@
 @media screen and (max-width: 46.874em){
 
+    .disappear
+    {
+        display: none;
+    }
+
+    .link
+    {
+        font-family: 'copperplate', serif;
+        font-weight: 700;
+        font-style: normal;
+        color: green;
+    }
+
     .active
     {
         display: block;
@@ -263,6 +276,19 @@
 
 
 @media screen and (min-width: 46.874em) and (max-width: 64em){
+
+    .link
+    {
+        font-family: 'copperplate', serif;
+        font-weight: 700;
+        font-style: normal;
+        color: black;
+    }
+
+    .disappear
+    {
+        display: none;
+    }
 
     .active
     {
@@ -596,6 +622,19 @@
 }
 
 @media screen and (min-width: 64em){
+
+    .link
+    {
+        font-family: 'copperplate', serif;
+        font-weight: 700;
+        font-style: normal;
+        color: black;
+    }
+
+    .disappear
+    {
+        display: none;
+    }
 
     .active
     {
