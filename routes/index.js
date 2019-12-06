@@ -49,7 +49,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/portfolioData/:target', (req, res) => {
   // here is where we set up the query 
-  let query = `SELECT * FROM tbl_work WHERE id="${req.params.target}"`;
+  let query = `SELECT * FROM tbl_work WHERE ID="${req.params.target}"`;
 
   sql.query(query, (err, result) => {
     if (err) {console.log(err);} //something done broke

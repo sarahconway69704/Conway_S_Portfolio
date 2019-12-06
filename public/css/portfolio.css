@@ -1,4 +1,8 @@
 @media screen and (max-width: 46.874em) {
+  .active {
+    display: block;
+  }
+
   .popover {
     display: none;
     position: fixed;

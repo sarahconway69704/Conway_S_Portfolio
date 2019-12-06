@@ -2,7 +2,7 @@
 
   console.log('fired');
   
-    const activate = document.querySelector('.active');
+    const melly = document.querySelector('.showit');
     const popOver = document.querySelector('.popover');
     const form = document.querySelector('form'), submit = form.querySelector('.submit-button');
 
@@ -64,10 +64,10 @@
           popOver.querySelector(".description").textContent = `Description: ${tbl_work.Description}`;
           popOver.querySelector(".madeWith").textContent = `Made with: ${tbl_work.Madewith}`;
 
-          popOver.style.display = "block";
-          
+          //popOver.style.display = "block";
+          popOver.classList.add('show-popover');
+  
     }
-
 
 
 
@@ -87,7 +87,9 @@
 
 
 
-      activate.addEventListener("click", fetchData);
-      form.addEventListener('submit', handleMail);
+      document.querySelectorAll('.showit').forEach(item => {
+        item.addEventListener("click", fetchData)});
 
-})();
+      form.addEventListener('submit', handleMail);
+      
+})(); 
