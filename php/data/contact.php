@@ -8,7 +8,7 @@ $fname = '';
 $lname = '';
 $email = '';
 $message = '';
-$recipient = 'sarahcway9@gmail.com';
+$recipient = 'sconwayportfolio9@gmail.com';
 
 //some validation
 

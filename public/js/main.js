@@ -9,22 +9,16 @@
     function handleMail(event) {
         event.preventDefault();
 
-        // formdata will be the values of the fields the user fills out (the inputs)
-        // maildata is an object we'll build and send through with those values
-
         let formdata = new FormData(form),
             maildata = {};
 
-        // parse the form data (it's an iterable, so you have to do it this way)
-        // and populate the maildata object with the input values (the formdata entries)
         for (let [key, value] of formdata.entries()) {
             maildata[key] = value;
         }
 
         let url = `/mail`;
 
-        // use the POST superglobal which is more secure than GET, and hit the /mail route in index.js
-        // inside the routes folder. this will take in the formdata we're sending, and use that to send our email
+      
         fetch(url, {
             method: 'POST',
             headers: {
@@ -62,15 +56,18 @@
         menu.classList.toggle("show");
     }
 
+
+
+
+
     function buildPopover(tbl_work, el) {
-        popOver.querySelector(".workImage").src = `images/${tbl_work.Image}`;
-          popOver.querySelector(".Title").textContent = `Title: ${tbl_work.Title}`;
-          popOver.querySelector(".Description").textContent = `Description: ${tbl_work.Description}`;
+          popOver.querySelector(".workImage").src = `images/${tbl_work.Image}`;
+          popOver.querySelector(".title").textContent = `Title: ${tbl_work.Title}`;
+          popOver.querySelector(".description").textContent = `Description: ${tbl_work.Description}`;
           popOver.querySelector(".madeWith").textContent = `Made with: ${tbl_work.Madewith}`;
 
-          popOver.classList.add('show-popover');
-       
-        el.appendChild(popOver);
+          popOver.style.display = "block";
+        
     }
 
     function fetchData() {

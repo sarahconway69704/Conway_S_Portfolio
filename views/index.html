@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/bio.css">
     <link rel="stylesheet" href="css/video.css">
     <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/contact.css">
 
     <title>Sarah Conway</title>
 </head>
@@ -202,14 +203,22 @@
         </div>
       </div>
     </div>
-  </section>
-   
-    <div class="popover">
-        <img src="" class="workImage"></p>
-        <p class="Title"></p>
-        <p class="Description"></p>
-        <p class="madeWith"></p>
+
+    <article class="popover" id="layoutPort">
+      <div id="items">
+      <img src="" class="workImage"></p>
+      <p class="title"></p>
+      <p class="description"></p>
+      <p class="madeWith"></p>
     </div>
+    </article>
+
+  </section>
+
+
+    
+
+    <section id="contactForm">
 
     <form action="/php/data/contact.php" method="post">
 
@@ -230,7 +239,8 @@
       <button type="submit">Submit</button>
       
           </form>
-    
+        
+    </section>
 
     <script src="js/main.js"></script>
 </body>
