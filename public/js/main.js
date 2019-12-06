@@ -60,8 +60,8 @@
 
     function buildPopover(tbl_work, el) {
           popOver.querySelector(".workImage").src = `images/${tbl_work.Image}`;
-          popOver.querySelector(".title").textContent = `Title: ${tbl_work.Title}`;
-          popOver.querySelector(".description").textContent = `Description: ${tbl_work.Description}`;
+          popOver.querySelector(".title").textContent = tbl_work.Title;
+          popOver.querySelector(".description").textContent = tbl_work.Description;
           popOver.querySelector(".madeWith").textContent = `Made with: ${tbl_work.Madewith}`;
 
           //popOver.style.display = "block";
@@ -91,5 +91,8 @@
         item.addEventListener("click", fetchData)});
 
       form.addEventListener('submit', handleMail);
+      popOver.querySelector('.close').addEventListener('click', function() {
+        popOver.classList.remove('show-popover');
+    });
       
 })(); 
