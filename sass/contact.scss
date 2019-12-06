@@ -4,29 +4,308 @@
 {
     float: left;
     margin-top: 100px;
-    background-color: red;
+    background-color: #377254;
+    height: 600px
 }
+
+#formHeader
+{
+    font-family: 'copperplate', serif;
+        font-weight: 700;
+        font-style: normal;
+        width: 400px;
+        margin-top: 30px;
+        float: left;
+        font-size: 1.7em;
+        margin-left: 20px;
+        color: #92cfa7;
+}
+
+label
+{
+    font-family: 'copperplate', serif;
+    font-weight: 700;
+    font-style: normal; 
+    color: #92cfa7;
+    font-size: 1.3em;
+    display: none;
+}
+
+input
+{
+    border: none;
+    border-bottom: 1px solid #92cfa7;;
+    background: transparent;
+    font-family: 'copperplate', serif;
+    font-weight: 700;
+    font-style: normal; 
+    float: left;
+    margin-left: 50px;
+    width: 200px;
+    margin-top: 30px;
+}
+
+::-webkit-input-placeholder
+{
+    color: white;
+    font-size: 15px;
+}
+
+:-ms-input-placeholder
+{
+    color: white;
+}
+
+form
+{
+    float: left;
+}
+
+textarea
+{
+    float: left; 
+    margin-left: 100px;
+    margin-top: 30px;
+    border: 1px solid #92cfa7;
+    background-color:  #377254;
+    font-family: 'copperplate', serif;
+    font-weight: 700;
+    font-style: normal; 
+    width: 300px;
+}
+
+button
+{
+    padding: 10px;
+    background-color:  #377254;
+    border: 1px solid #92cfa7;
+    font-family: 'copperplate', serif;
+    font-weight: 700;
+    font-style: normal; 
+    margin-left: 100px;
+    width: 150px;
+    color: #92cfa7;
+    margin-top: 30px;
+}
+
+button:hover
+{
+    background-color: #92cfa7;
+    border: 1px solid #377254;
+    color: #377254;
+
+}
+
+
+
+button
+{
+    float: left;
+}
+
 
 }
 
 @media screen and (min-width: 46.874em) and (max-width: 64em){
 
-    #contactForm
-    {
+    
+
+#contactForm
+{
+    float: left;
+    background-color: #377254;
+    height: 600px;
+    margin-top: 2650px;
+}
+
+#formHeader
+{
+    font-family: 'copperplate', serif;
+        font-weight: 700;
+        font-style: normal;
+        width: 400px;
+        margin-top: 30px;
         float: left;
-        margin-top: 2650px;
-        background-color: red;
-    }
+        font-size: 1.7em;
+        margin-left: 20px;
+        color: #92cfa7;
+}
+
+label
+{
+    
+    display: none;
+}
+
+input
+{
+    border: none;
+    border-bottom: 1px solid #92cfa7;;
+    background: transparent;
+    font-family: 'copperplate', serif;
+    font-weight: 700;
+    font-style: normal; 
+    float: left;
+    margin-left: 400px;
+    width: 200px;
+    margin-top: 30px;
+}
+
+::-webkit-input-placeholder
+{
+    color:#92cfa7;
+    font-size: 15px;
+}
+
+:-ms-input-placeholder
+{
+    color: #92cfa7;
+}
+
+form
+{
+    float: left;
+}
+
+textarea
+{
+    float: left; 
+    margin-left: 400px;
+    margin-top: 30px;
+    border: 1px solid #92cfa7;
+    background-color:  #377254;
+    font-family: 'copperplate', serif;
+    font-weight: 700;
+    font-style: normal; 
+    width: 300px;
+
+}
+
+button
+{
+    padding: 10px;
+    background-color:  #377254;
+    border: 1px solid #92cfa7;
+    font-family: 'copperplate', serif;
+    font-weight: 700;
+    font-style: normal; 
+    margin-left: 400px;
+    width: 150px;
+    color: #92cfa7;
+    margin-top: 30px;
+    float: left;
+}
+
+button:hover
+{
+    background-color: #92cfa7;
+    border: 1px solid #377254;
+    color: #377254;
+
+}
+
+
+
+
     
 
 }
 
 @media screen and (min-width: 64em){
 
+  
+
     #contactForm
-    {
+{
+    float: left;
+    background-color: #377254;
+    height: 600px;
+    margin-top: 2750px;
+}
+
+#formHeader
+{
+    font-family: 'copperplate', serif;
+        font-weight: 700;
+        font-style: normal;
+        width: 400px;
+        margin-top: 30px;
         float: left;
-        margin-top: 2750px;
-        background-color: red;
-    }
+        font-size: 1.7em;
+        margin-left: 20px;
+        color: #92cfa7;
+}
+
+label
+{
+    
+    display: none;
+}
+
+input
+{
+    border: none;
+    border-bottom: 1px solid #92cfa7;;
+    background: transparent;
+    font-family: 'copperplate', serif;
+    font-weight: 700;
+    font-style: normal; 
+    float: left;
+    margin-left: 700px;
+    width: 400px;
+    margin-top: 30px;
+}
+
+::-webkit-input-placeholder
+{
+    color:#92cfa7;
+    font-size: 15px;
+}
+
+:-ms-input-placeholder
+{
+    color: #92cfa7;
+}
+
+form
+{
+    float: left;
+}
+
+textarea
+{
+    float: left; 
+    margin-left: 700px;
+    margin-top: 30px;
+    border: 1px solid #92cfa7;
+    background-color:  #377254;
+    font-family: 'copperplate', serif;
+    font-weight: 700;
+    font-style: normal; 
+    width: 400px;
+
+}
+
+button
+{
+    padding: 10px;
+    background-color:  #377254;
+    border: 1px solid #92cfa7;
+    font-family: 'copperplate', serif;
+    font-weight: 700;
+    font-style: normal; 
+    margin-left: 700px;
+    width: 150px;
+    color: #92cfa7;
+    margin-top: 30px;
+    float: left;
+}
+
+button:hover
+{
+    background-color: #92cfa7;
+    border: 1px solid #377254;
+    color: #377254;
+}
+
 }

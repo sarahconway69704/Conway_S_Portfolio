@@ -223,19 +223,22 @@
 
     <form action="/php/data/contact.php" method="post">
 
-      <h1>Contact Me</h1>
+      <h3 id=formHeader>Want to compare stirfry recipies? 
+          Or comission me?
+          Just say hi?
+          </h3>
       
-      <label for="f-name-field">First Name</label>
+      <label for="f-name-field" id="firstn">First Name</label>
       <input id="f-name-field" name="fname" type="text" placeholder="First Name">
       
-      <label for="l-name-field">Last Name</label>
+      <label for="l-name-field" id="lastn">Last Name</label>
       <input id="l-name-field" name="lname" type="text" placeholder="Last Name">
       
-      <label for="email-field">Email</label>
+      <label for="email-field" id="maile">Email</label>
       <input id="email-field" name="email" type="email" placeholder="Email">
       
-      <label for="message-field">Message</label>
-      <textarea id="message-field" name="message"></textarea>
+      <label for="message-field" id="mess">Message</label>
+      <textarea id="message-field" name="message" rows="10" placeholder="Speak Your Truth!"></textarea>
       
       <button type="submit">Submit</button>
       
