@@ -1,0 +1,23 @@
+@media screen and (max-width: 46.874em) {
+  #contactForm {
+    float: left;
+    margin-top: 100px;
+    background-color: red;
+  }
+}
+@media screen and (min-width: 46.874em) and (max-width: 64em) {
+  #contactForm {
+    float: left;
+    margin-top: 2650px;
+    background-color: red;
+  }
+}
+@media screen and (min-width: 64em) {
+  #contactForm {
+    float: left;
+    margin-top: 2750px;
+    background-color: red;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */
