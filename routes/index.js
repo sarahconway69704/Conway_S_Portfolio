@@ -5,6 +5,7 @@ const sql = require('../utils/sql');
 var auth = require('../config/mailcreds');
 var mailer = require('nodemailer');
 
+
 // set up the nodemailer stuff
 const transporter = mailer.createTransport({
 	service: 'gmail',
@@ -44,6 +45,7 @@ router.post('/mail', (req, res) => {
 router.get('/', function(req, res, next) {
   //res.render('index', { title: 'Express' });
   console.log('sent back a static file');
+
   res.sendFile((path.join(__dirname, "../views/index.html")));
 });
 

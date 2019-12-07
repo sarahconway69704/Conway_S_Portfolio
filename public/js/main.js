@@ -6,7 +6,6 @@
     const popOver = document.querySelector('.popover');
     const form = document.querySelector('form'), submit = form.querySelector('.submit-button');
     const hello = document.getElementById("#yay");
-  
 
     function handleMail(event) {
         event.preventDefault();
@@ -87,6 +86,8 @@
             .catch((err) => console.log(err));
       }
       
+
+     
       document.querySelectorAll('.showit').forEach(item => {
         item.addEventListener("click", fetchData)});
         
