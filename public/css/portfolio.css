@@ -513,6 +513,14 @@
     font-weight: 700;
     font-style: normal;
     color: black;
+    position: absolute;
+    float: left;
+    margin-left: 750px;
+    text-align: center;
+  }
+
+  .link:hover {
+    color: #5d806e;
   }
 
   .disappear {
@@ -536,6 +544,7 @@
 
   .close:hover {
     cursor: pointer;
+    color: #5d806e;
   }
 
   .popover {
@@ -585,6 +594,7 @@
     background-color: #92cfa7;
     padding: 10px;
     border-radius: 10px;
+    margin-top: 50px;
   }
 
   #items {
@@ -592,7 +602,7 @@
     height: 100%;
     margin-left: 5px;
     float: left;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .title {
