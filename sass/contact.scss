@@ -103,6 +103,50 @@ button
     float: left;
 }
 
+#thx
+{
+    color: #377254;
+    font-family: 'copperplate', serif;
+    font-weight: 700;
+    font-style: normal; 
+    font-size: 1em;
+    width: 450px;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.sure
+{
+    font-family: 'copperplate', serif;
+    font-weight: 700;
+    font-style: normal; 
+    font-size: 1em;
+    text-decoration-line: underline;
+    color: white;
+    margin-left: 160px;
+}
+
+.sure:hover
+{
+    color: #377254;
+    cursor: pointer;
+}
+
+#yay
+{
+    background-color:  #92cfa7;
+    height: 200px;
+    width: 500px;
+    z-index: 1;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 200px;
+    box-shadow: 0px 5px 20px 3px #173525;
+   display: none;
+}
+
+
 
 }
 
@@ -202,6 +246,50 @@ button:hover
     border: 1px solid #377254;
     color: #377254;
 
+}
+
+#thx
+{
+    color: #377254;
+    font-family: 'copperplate', serif;
+    font-weight: 700;
+    font-style: normal; 
+    font-size: 1em;
+    width: 450px;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.sure
+{
+    font-family: 'copperplate', serif;
+    font-weight: 700;
+    font-style: normal; 
+    font-size: 1em;
+    text-decoration-line: underline;
+    color: white;
+    margin-left: 160px;
+}
+
+.sure:hover
+{
+    color: #377254;
+    cursor: pointer;
+}
+
+#yay
+{
+    background-color:  #92cfa7;
+    height: 200px;
+    width: 500px;
+    z-index: 1;
+    margin: 0 auto;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 200px;
+    box-shadow: 0px 5px 20px 3px #173525;
+   display: none;
 }
 
 
@@ -307,5 +395,51 @@ button:hover
     border: 1px solid #377254;
     color: #377254;
 }
+
+#thx
+{
+    color: #377254;
+    font-family: 'copperplate', serif;
+    font-weight: 700;
+    font-style: normal; 
+    font-size: 1em;
+    width: 450px;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.sure
+{
+    font-family: 'copperplate', serif;
+    font-weight: 700;
+    font-style: normal; 
+    font-size: 1em;
+    text-decoration-line: underline;
+    color: white;
+    margin-left: 160px;
+}
+
+.sure:hover
+{
+    color: #377254;
+    cursor: pointer;
+}
+
+#yay
+{
+    background-color:  #92cfa7;
+    height: 200px;
+    width: 500px;
+    z-index: 1;
+    margin: 0 auto;
+    position: absolute;
+    margin-left: 360px;
+    margin-top: 200px;
+    box-shadow: 0px 5px 20px 3px #173525;
+    display: none;
+}
+
+
 
 }

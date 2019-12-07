@@ -5,10 +5,8 @@
     const melly = document.querySelector('.showit');
     const popOver = document.querySelector('.popover');
     const form = document.querySelector('form'), submit = form.querySelector('.submit-button');
-    //const Bio = document.getElementById("bioText");
-   // function scrollOp(){
-
-   // }
+    const hello = document.getElementById("#yay");
+  
 
     function handleMail(event) {
         event.preventDefault();
@@ -38,17 +36,20 @@
                 console.log(data);
 
                 if (data.response.includes("OK")) {
-                    // we successfully sent an email via gmail and nodemailer!
-                    // flash success here, reset the form
+                    
                     form.reset();
-                    alert("email was sent!"); // DO NOT use alerts. they are so hacky and gross.
+                    thanks();
+                    //alert("email was sent!"); 
                 }
-            }) // this will be a success or fail message from the server
+            }) 
             .catch((err) => console.log(err));
 
         console.log('tried sending mail');
     }
 
+    function thanks(){
+        document.getElementById('yay').style.display = 'block';
+    }
   
 
 
@@ -56,7 +57,7 @@
 
     let menu = document.querySelector(".menu");
 
-    function showMenu(){ //this is how the hamburger menu shows up
+    function showMenu(){ 
         menu.classList.toggle("show");
     }
 
@@ -73,9 +74,6 @@
   
     }
 
-
-
-    
     function fetchData() {
         let targetEl = this, 
           url = `/portfolioData/${this.dataset.target}`;
@@ -88,11 +86,6 @@
             })
             .catch((err) => console.log(err));
       }
-
-
-
-
-
       
       document.querySelectorAll('.showit').forEach(item => {
         item.addEventListener("click", fetchData)});
@@ -102,6 +95,14 @@
       popOver.querySelector('.close').addEventListener('click', function() {
         popOver.classList.remove('show-popover');
     });
+
+    document.querySelector('.sure').addEventListener('click', function() {
+        document.getElementById('yay').style.display = 'none';
+    });
+    
+    
+
+   
     
       
 })(); 
