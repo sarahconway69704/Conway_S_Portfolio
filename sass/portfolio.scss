@@ -283,6 +283,12 @@
         font-weight: 700;
         font-style: normal;
         color: black;
+        margin-left: 550px;
+    }
+
+    .link:hover
+    {
+        color:  #5d806e;
     }
 
     .disappear
@@ -363,7 +369,7 @@
         background-color: #92cfa7;;
         padding: 10px;
         border-radius: 10px;
-        
+        margin-top: 50px;
       }
 
       #items
