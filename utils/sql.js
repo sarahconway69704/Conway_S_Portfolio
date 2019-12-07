@@ -1,4 +1,4 @@
-const config = require("../config");
+const config = require("../config"); 
 const sql = require('mysql');
 
 const connect = sql.createConnection({
