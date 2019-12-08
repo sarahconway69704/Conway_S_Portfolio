@@ -4,6 +4,7 @@ var path = require('path');
 const sql = require('../utils/sql');
 var auth = require('../config/mailcreds');
 var mailer = require('nodemailer');
+const connect = require('../utils/sql');
 
 
 
@@ -48,13 +49,13 @@ router.get('/', function(req, res, next) {
   //res.render('index', { title: 'Express' });
 
 // get the connection via the connection pool, and then run the query -> just one added step
-sql.getConnection((err, connection) => {
+connect.getConnection((err, connection) => {
 	if (err) { return console.log(error.message); }
 
 	let query = `SELECT * FROM tbl_work WHERE ID="${req.params.target}"`;
 
 
-	sql.query(query, (err, next) => {
+	connect.query(query, (err, result) => {
 		connection.release(); // send this connection back to the pool
 
 		if (err) {
@@ -62,10 +63,10 @@ sql.getConnection((err, connection) => {
 			return console.log(err.message);
 		}
 
-		console.log(next); // this should be your database query result
+		console.log(result); // this should be your database query result
 
 		// render our page
-		res.render('/', {next}); // whatever page and data you're rendering
+		res.render('/', {result}); // whatever page and data you're rendering
 	});
 });
 
