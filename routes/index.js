@@ -42,8 +42,8 @@ router.post('/mail', (req, res) => {
 })
 
 /* GET home page. */
-router.get('/', (req, res,) => {
-  res.render('index', { title: 'Express' });
+router.get('/', (req, res, next) => {
+  //res.render('index', { title: 'Express' });
   
 // get the connection via the connection pool, and then run the query -> just one added step
 connect.getConnection((err, connection) => {
@@ -69,7 +69,7 @@ connect.getConnection((err, connection) => {
 
   console.log('sent back a static file');
 
-  //res.sendFile((path.join(__dirname, "../views/index.html")));
+  res.sendFile((path.join(__dirname, "../views/index.html")));
 });
 
 router.get('/portfolioData/:target', (req, res) => {
