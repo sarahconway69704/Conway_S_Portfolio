@@ -45,16 +45,15 @@ router.post('/mail', (req, res) => {
 })
 
 /* GET home page. */
-router.get('/', function(req, res, result) {
+router.get('/', function(req, res, next) {
   //res.render('index', { title: 'Express' });
-  res.sendFile((path.join(__dirname, "../views/index.html")));
+  
 // get the connection via the connection pool, and then run the query -> just one added step
 connect.getConnection((err, connection) => {
+	
 	if (err) { return console.log(error.message); }
 
-	let query = `SELECT * FROM tbl_work WHERE ID="${req.params.target}"`;
-
-
+	let query = `SELECT * FROM tbl_work`;
 	connect.query(query, (err, result) => {
 		connection.release(); // send this connection back to the pool
 
@@ -70,9 +69,9 @@ connect.getConnection((err, connection) => {
 	});
 });
 
-  //console.log('sent back a static file');
+  console.log('sent back a static file');
 
-  
+  res.sendFile((path.join(__dirname, "../views/index.html")));
 });
 
 router.get('/portfolioData/:target', (req, res) => {
