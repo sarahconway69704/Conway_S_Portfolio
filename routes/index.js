@@ -51,9 +51,10 @@ router.get('/', function(req, res, next) {
 sql.getConnection((err, connection) => {
 	if (err) { return console.log(error.message); }
 
-	let query = `... your query goes here. obviously this won't work, so don't copy and paste this line ...`;
+	let query = `SELECT * FROM tbl_work WHERE ID="${req.params.target}"`;
 
-	sql.query(query, (err, rows) => {
+
+	sql.query(query, (err, result) => {
 		connection.release(); // send this connection back to the pool
 
 		if (err) {
@@ -61,10 +62,10 @@ sql.getConnection((err, connection) => {
 			return console.log(err.message);
 		}
 
-		console.log(rows); // this should be your database query result
+		console.log(result); // this should be your database query result
 
 		// render our page
-		res.render('page', {data: rows}); // whatever page and data you're rendering
+		res.render('/', {result}); // whatever page and data you're rendering
 	});
 });
 
