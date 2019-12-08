@@ -42,7 +42,7 @@ router.post('/mail', (req, res) => {
 })
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', (req, res, next) => {
   //res.render('index', { title: 'Express' });
   
 // get the connection via the connection pool, and then run the query -> just one added step
