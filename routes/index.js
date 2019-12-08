@@ -50,7 +50,7 @@ connect.getConnection((err, connection) => {
 	
 	if (err) { return console.log(error.message); }
 
-	let query = `SELECT * FROM tbl_work`;
+	let query = `SELECT ID, Image, Title, Description, Madewith, links FROM tbl_work`;
 	
 	connect.query(query, (err, result) => {
 		connection.release(); // send this connection back to the pool
@@ -63,7 +63,7 @@ connect.getConnection((err, connection) => {
 		console.log(result); // this should be your database query result
 
 		// render our page
-		res.render('/', { art: result}); // whatever page and data you're rendering
+		res.render('/', { art }); // whatever page and data you're rendering
 	});
 });
 
