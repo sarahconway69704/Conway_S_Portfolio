@@ -6,6 +6,8 @@ var auth = require('../config/mailcreds');
 var mailer = require('nodemailer');
 
 
+
+
 // set up the nodemailer stuff
 const transporter = mailer.createTransport({
 	service: 'gmail',
@@ -44,6 +46,30 @@ router.post('/mail', (req, res) => {
 /* GET home page. */
 router.get('/', function(req, res, next) {
   //res.render('index', { title: 'Express' });
+
+// get the connection via the connection pool, and then run the query -> just one added step
+sql.getConnection((err, connection) => {
+	if (err) { return console.log(error.message); }
+
+	let query = `... your query goes here. obviously this won't work, so don't copy and paste this line ...`;
+
+	sql.query(query, (err, rows) => {
+		connection.release(); // send this connection back to the pool
+
+		if (err) {
+			// will exit the function and log the error
+			return console.log(err.message);
+		}
+
+		console.log(rows); // this should be your database query result
+
+		// render our page
+		res.render('page', {data: rows}); // whatever page and data you're rendering
+	});
+});
+
+
+
   console.log('sent back a static file');
 
   res.sendFile((path.join(__dirname, "../views/index.html")));
