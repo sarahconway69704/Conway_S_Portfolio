@@ -52,7 +52,7 @@ connect.getConnection((err, connection) => {
 
 	let query = `SELECT * FROM tbl_work`;
 	
-	connect.query(query, (err, results) => {
+	connect.query(query, (err, result) => {
 		connection.release(); // send this connection back to the pool
 
 		if (err) {
@@ -60,7 +60,7 @@ connect.getConnection((err, connection) => {
 			return console.log(err.message);
 		}
 
-		console.log(results); // this should be your database query result
+		console.log(result); // this should be your database query result
 
 		// render our page
 		res.render('/', { art: result }); // whatever page and data you're rendering
