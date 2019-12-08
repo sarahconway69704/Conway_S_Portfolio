@@ -2,3 +2,14 @@
 <p>Welcome to {{title}}</p>
 
 
+{{#each art}}
+ <article class="popover" id="layoutPort">
+      <span class="close cursor">&times;</span>
+      <div id="items">
+      <img src="images/{{ Image }}" class="workImage" id="portImage">
+      <p class="title"> {{ Title }}</p>
+      <p class="description"> {{ Description }}</p>
+      <p class="madeWith">{{ Madewith }}</p>
+      <a href="https://www.youtube.com/channel/UCdqrhIYw9gPv6ygbi51lSlw?view_as=subscriber" class="link">{{ links }}</a>
+    </div>
+    </article>

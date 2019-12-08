@@ -6,9 +6,6 @@ var auth = require('../config/mailcreds');
 var mailer = require('nodemailer');
 const connect = require('../utils/sql');
 
-
-
-
 // set up the nodemailer stuff
 const transporter = mailer.createTransport({
 	service: 'gmail',
@@ -53,7 +50,7 @@ connect.getConnection((err, connection) => {
 	
 	if (err) { return console.log(error.message); }
 
-	let query = `SELECT * FROM tbl_work WHERE ID="${req.params.target}"`;
+	let query = `SELECT * FROM tbl_work`;
 	
 	connect.query(query, (err, result) => {
 		connection.release(); // send this connection back to the pool
@@ -66,7 +63,7 @@ connect.getConnection((err, connection) => {
 		console.log(result); // this should be your database query result
 
 		// render our page
-		res.render('/', {tbl_work}); // whatever page and data you're rendering
+		res.render('/', { art: result}); // whatever page and data you're rendering
 	});
 });
 
