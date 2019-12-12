@@ -10,6 +10,6 @@ database: config.dbase,
 connectionLimit : 20,
 queueLimit : 100,
 waitForConnections : true
-})
+});
 
 module.exports = connect;
