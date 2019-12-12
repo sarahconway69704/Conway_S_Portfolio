@@ -50,7 +50,7 @@ connect.getConnection((err, connection) => {
 	
 	if (err) { return console.log(error.message); }
 
-	let query = `SELECT ID, Title, Description, Madewith, links FROM tbl_work`;
+	let query = `SELECT * FROM tbl_work`;
 	
 	connect.query(query, (err, result) => {
 		connection.release(); // send this connection back to the pool
