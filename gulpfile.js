@@ -8,4 +8,4 @@ function compile(done) {
     .pipe(gulp.dest("css"))
 }
 
-exports.compile = compile;
+exports.compile = compile
