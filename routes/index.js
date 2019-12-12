@@ -4,7 +4,7 @@ var path = require('path');
 const sql = require('../utils/sql');
 var auth = require('../config/mailcreds');
 var mailer = require('nodemailer');
-const connect = require('../utils/sql');
+
 
 // set up the nodemailer stuff
 const transporter = mailer.createTransport({
@@ -46,13 +46,13 @@ router.get('/', (req, res, next) => {
   //res.render('index', { title: 'Express' });
   
 // get the connection via the connection pool, and then run the query -> just one added step
-connect.getConnection((err, connection) => {
+sql.getConnection((err, connection) => {
 	
 	if (err) { return console.log(error.message); }
 
 	let query = `SELECT * FROM tbl_work`;
 	
-	connect.query(query, (err, result) => {
+	sql.query(query, (err, result) => {
 		connection.release(); // send this connection back to the pool
 
 		if (err) {
@@ -63,7 +63,7 @@ connect.getConnection((err, connection) => {
 		console.log(result); // this should be your database query result
 
 		// render our page
-		res.render('/', { art: result }); // whatever page and data you're rendering
+		res.render('index', { portfolioData: result }); // whatever page and data you're rendering
 	});
 });
 
