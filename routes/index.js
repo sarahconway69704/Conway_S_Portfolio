@@ -42,7 +42,7 @@ router.post('/mail', (req, res) => {
 })
 
 /* GET home page. */
-router.get('/', (req, res, next) => {
+router.get('/', (req, res) => {
   //res.render('index', { title: 'Express' });
   
 // get the connection via the connection pool, and then run the query -> just one added step
@@ -63,7 +63,7 @@ sql.getConnection((err, connection) => {
 		console.log(result); // this should be your database query result
 
 		// render our page
-		res.render('/', {portfolioData: result }); // whatever page and data you're rendering
+		res.render('index', { portfolioData: result }); // whatever page and data you're rendering
 	});
 });
 
