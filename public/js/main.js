@@ -93,9 +93,9 @@
         
       form.addEventListener('submit', handleMail);
      
-      popOver.querySelector('.close').addEventListener('click', function() {
-        popOver.classList.remove('show-popover');
-    });
+     // popOver.querySelector('.close').addEventListener('click', function() {
+       // popOver.classList.remove('show-popover');
+  //  });
 
     document.querySelector('.sure').addEventListener('click', function() {
         document.getElementById('yay').style.display = 'none';
