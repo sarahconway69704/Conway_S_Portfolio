@@ -50,7 +50,7 @@ connect.getConnection((err, connection) => {
 	
 	if (err) { return console.log(err.message); }
 
-	let query = `SELECT * FROM tbl_work`;
+	let query = `SELECT * FROM tbl_work WHERE ID="${req.params.target}"`;
 	
 	connect.query(query, (err, result) => {
 		connection.release(); // send this connection back to the pool
@@ -63,7 +63,7 @@ connect.getConnection((err, connection) => {
 		console.log(result); // this should be your database query result
 
 		// render our page
-		res.render('/', {portfolioData: result });
+		res.render('/', {art: result });
 		res.render('index'); // whatever page and data you're rendering
 	});
 });
