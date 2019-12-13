@@ -66,14 +66,13 @@ connect.getConnection((err, connection) => {
 		res.render('home', {art: result });
 		res.render('index');
 		res.render('layout');
-		res.sendFile((path.join(__dirname, "../views/index.html")));
 		 // whatever page and data you're rendering
 	});
 });
 
+  console.log('sent back a static file');
 
-
-  
+  res.sendFile((path.join(__dirname, "../views/index.html")));
 });
 
 router.get('/portfolioData/:target', (req, res) => {
