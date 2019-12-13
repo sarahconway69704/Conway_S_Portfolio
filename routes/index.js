@@ -6,6 +6,42 @@ var auth = require('../config/mailcreds');
 var mailer = require('nodemailer');
 const connect = require('../utils/sql');
 
+/* GET home page. */
+router.get('/', (req, res, next) => {
+	//res.render('index', { title: 'Express' });
+	
+  // get the connection via the connection pool, and then run the query -> just one added step
+  connect.getConnection((err, connection) => {
+	  
+	  if (err) { return console.log(err.message); }
+  
+	  let query = `SELECT * FROM tbl_work`;
+	  
+	  connect.query(query, (err, result) => {
+		  connection.release(); // send this connection back to the pool
+  
+		  if (err) {
+			  // will exit the function and log the error
+			  return console.log(err.message);
+		  }
+  
+		  console.log(result); // this should be your database query result
+  
+		  // render our page
+		  res.render('home', {art: result });
+		  res.render('index');
+		  res.render('layout');
+		   // whatever page and data you're rendering
+	  })
+  });
+  
+	console.log('sent back a static file');
+  
+	res.sendFile((path.join(__dirname, "../views/index.html")));
+  });
+
+
+
 // set up the nodemailer stuff
 const transporter = mailer.createTransport({
 	service: 'gmail',
@@ -38,42 +74,10 @@ router.post('/mail', (req, res) => {
 			console.log("success! ", info);
 			res.json(info);
 		}
-	});
+	})
 });
 
-/* GET home page. */
-router.get('/', (req, res, next) => {
-  //res.render('index', { title: 'Express' });
-  
-// get the connection via the connection pool, and then run the query -> just one added step
-connect.getConnection((err, connection) => {
-	
-	if (err) { return console.log(err.message); }
 
-	let query = `SELECT * FROM tbl_work`;
-	
-	connect.query(query, (err, result) => {
-		connection.release(); // send this connection back to the pool
-
-		if (err) {
-			// will exit the function and log the error
-			return console.log(err.message);
-		}
-
-		console.log(result); // this should be your database query result
-
-		// render our page
-		res.render('home', {art: result });
-		res.render('index');
-		res.render('layout');
-		 // whatever page and data you're rendering
-	});
-});
-
-  console.log('sent back a static file');
-
-  res.sendFile((path.join(__dirname, "../views/index.html")));
-});
 
 router.get('/portfolioData/:target', (req, res) => {
   // here is where we set up the query 
