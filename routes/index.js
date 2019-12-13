@@ -63,7 +63,7 @@ connect.getConnection((err, connection) => {
 		console.log(result); // this should be your database query result
 
 		// render our page
-		res.render('home', {art: result });
+		res.render('home', {portfolioData: result });
 		res.render('index');
 		res.render('layout');
 		 // whatever page and data you're rendering
