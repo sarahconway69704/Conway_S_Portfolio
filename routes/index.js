@@ -64,15 +64,16 @@ connect.getConnection((err, connection) => {
 
 		// render our page
 		res.render('home', {art: result });
-		
-		
+		res.render('index');
+		res.render('layout');
+		res.sendFile((path.join(__dirname, "../views/index.html")));
 		 // whatever page and data you're rendering
 	});
 });
-res.render('layout');
-  console.log('sent back a static file');
 
-  res.sendFile((path.join(__dirname, "../views/index.html")));
+
+
+  
 });
 
 router.get('/portfolioData/:target', (req, res) => {
