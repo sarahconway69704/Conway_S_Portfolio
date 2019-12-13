@@ -64,6 +64,7 @@ connect.getConnection((err, connection) => {
 
 		// render our page
 		res.render('home', {art: result });
+		res.render('index');
 		res.render('layout');
 		 // whatever page and data you're rendering
 	});
