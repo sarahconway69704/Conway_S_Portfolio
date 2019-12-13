@@ -95,7 +95,7 @@ router.get('/portfolioData/:target', (req, res) => {
 	
 			// render our page
 			res.json(result[0]);
-			res.render('index', {data: result});
+			res.render('home', {data: result});
 			 // whatever page and data you're rendering
 		})
 	})

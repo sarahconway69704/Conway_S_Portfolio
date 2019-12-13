@@ -83,7 +83,7 @@
               console.log(data);
               buildPopover(data, targetEl);
             })
-            .catch((err) => console.log(err));
+            //.catch((err) => console.log(err));
       }
       
 
