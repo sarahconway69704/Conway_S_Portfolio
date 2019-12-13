@@ -6,10 +6,6 @@ var auth = require('../config/mailcreds');
 var mailer = require('nodemailer');
 const connect = require('../utils/sql');
 
-
-
-
-
 // set up the nodemailer stuff
 const transporter = mailer.createTransport({
 	service: 'gmail',
@@ -68,12 +64,12 @@ connect.getConnection((err, connection) => {
 
 		// render our page
 		res.render('home', {art: result });
-		res.render('index');
-		res.render('layout');
+		
+		
 		 // whatever page and data you're rendering
 	});
 });
-
+res.render('layout');
   console.log('sent back a static file');
 
   res.sendFile((path.join(__dirname, "../views/index.html")));
