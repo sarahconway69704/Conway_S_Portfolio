@@ -7,6 +7,47 @@
     const form = document.querySelector('form'), submit = form.querySelector('.submit-button');
     const hello = document.getElementById("#yay");
 
+
+    function parseUserData(person) { //person is the database result
+        let targetDiv = document.querySelector('.items'),
+            targetImg = popOver.querySelector('img');
+
+        let bioContent = `
+            <p>${person.Title}</p>
+            <p>${person.Description}</p> 
+            <p>${person.Madewith}</p> 
+            <p>${person.links}</p> 
+        `;
+
+        console.log(bioContent);
+
+        targetDiv.innerHTML = bioContent;
+        targetImg.src = person.imgsrc;
+
+        lightbox.classList.add('show-lb');
+    }
+
+    function getUserData(event) {
+        event.preventDefault(); //kill the default tag behaviour (don't navigate anywhere)
+        //debugger;
+        //find the image closest to the anchor tag and get its src property
+        // let imgSrc = this.previousElementSibling.getAttribute('src');
+
+        let url = `/users/${this.getAttribute('href')}` //this will add a 1, 2, or 3 to our url
+
+        fetch(url) //go get the data
+            .then(res => res.json()) //parse the json results into a plain object that js can read
+            .then(data => {
+                console.log("my database result is: ", data)
+
+                //data[0].imgsrc = imgSrc;
+                parseUserData(data[0]); //take this and put it in the parseUserData function
+            })
+            .catch((err) => {
+                console.log(err)
+            });
+    }
+
     function handleMail(event) {
         event.preventDefault();
 
