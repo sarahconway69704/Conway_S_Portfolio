@@ -39,7 +39,7 @@ router.post('/mail', (req, res) => {
 			res.json(info);
 		}
 	});
-})
+});
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
@@ -63,7 +63,7 @@ connect.getConnection((err, connection) => {
 		console.log(result); // this should be your database query result
 
 		// render our page
-		res.render('index', {art: result });
+		res.render('home', {art: result });
 		res.render('layout');
 		 // whatever page and data you're rendering
 	});
@@ -84,7 +84,7 @@ router.get('/portfolioData/:target', (req, res) => {
     console.log(result); //this should be the database now
 
     res.json(result[0]); //send that row back to the calling function <3
-  })
-})
+  });
+});
 
 module.exports = router;
