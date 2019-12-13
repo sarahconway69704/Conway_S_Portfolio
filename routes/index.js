@@ -75,7 +75,7 @@ connect.getConnection((err, connection) => {
   res.sendFile((path.join(__dirname, "../views/index.html")));
 });
 
-router.get('/portfolioData/:target', (req, res) => {
+router.get('/users/:ID', (req, res) => {
 
 	connect.getConnection((err, connection) => {
 	
