@@ -94,7 +94,7 @@ router.get('/portfolioData/:target', (req, res) => {
 			console.log(result); // this should be your database query result
 	
 			// render our page
-			res.render('home', {art: result });
+			res.render('home', {fetchData: result });
 			 // whatever page and data you're rendering
 		})
 	})
