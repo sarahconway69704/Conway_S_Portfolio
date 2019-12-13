@@ -9,7 +9,7 @@
 
 
     function parseUserData(person) { //person is the database result
-        let targetDiv = document.querySelector('.items'),
+        let targetDiv = document.querySelector('.lb-content'),
             targetImg = popOver.querySelector('img');
 
         let bioContent = `
@@ -24,7 +24,7 @@
         targetDiv.innerHTML = bioContent;
         targetImg.src = person.imgsrc;
 
-        lightbox.classList.add('show-lb');
+        popOver.classList.add('show-popover');
     }
 
     function getUserData(event) {
@@ -103,34 +103,11 @@
 
 
 
-    function buildPopover(tbl_work, el) {
-          popOver.querySelector(".workImage").src = `images/${tbl_work.Image}`;
-          popOver.querySelector(".title").textContent = tbl_work.Title;
-          popOver.querySelector(".description").textContent = tbl_work.Description;
-          popOver.querySelector(".madeWith").textContent = `Made with: ${tbl_work.Madewith}`;
-          popOver.querySelector(".link").textContent = tbl_work.links;
-
-          popOver.classList.add('show-popover');
-  
-    }
-
-    function fetchData() {
-        let targetEl = this, 
-          url = `/portfolioData/${this.dataset.target}`;
-      
-            fetch(url)
-            .then(res => res.json())
-            .then(data => {
-              console.log(data);
-              buildPopover(data, targetEl);
-            })
-            .catch((err) => console.log(err));
-      }
-      
+    
 
      
       document.querySelectorAll('.showit').forEach(item => {
-        item.addEventListener("click", fetchData)});
+        item.addEventListener("click", getUserData)});
         
       form.addEventListener('submit', handleMail);
      
