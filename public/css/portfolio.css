@@ -808,6 +808,18 @@
     background-color: black;
     padding: 10px;
   }
+
+  .lightbox {
+    display: none;
+    flex-direction: row;
+    min-height: 200vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5000;
+    padding: 20px;
+    background-color: #FFCAE2;
+  }
 }
 
 /*# sourceMappingURL=portfolio.css.map */

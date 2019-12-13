@@ -93,9 +93,12 @@ router.get('/users/:ID', (req, res) => {
 	
 			console.log(result); // this should be your database query result
 	
+			console.log('after split: ', result[0]);
+
+        
 			// render our page
 			res.render('home', {portfolioData: result });
-			res.render('layout');
+			
 			 // whatever page and data you're rendering
 		})
 	})

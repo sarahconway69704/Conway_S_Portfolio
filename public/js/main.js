@@ -6,11 +6,12 @@
     const popOver = document.querySelector('.popover');
     const form = document.querySelector('form'), submit = form.querySelector('.submit-button');
     const hello = document.getElementById("#yay");
+    lightbox = document.querySelector('.lightbox');
 
 
     function parseUserData(person) { //person is the database result
         let targetDiv = document.querySelector('.lb-content'),
-            targetImg = popOver.querySelector('img');
+            targetImg = lightbox.querySelector('img');
 
         let bioContent = `
             <p>${person.Title}</p>
@@ -24,7 +25,7 @@
         targetDiv.innerHTML = bioContent;
         targetImg.src = person.imgsrc;
 
-        popOver.classList.add('show-popover');
+        lightbox.classList.add('show-popover');
     }
 
     function getUserData(event) {
@@ -111,8 +112,8 @@
         
       form.addEventListener('submit', handleMail);
      
-     popOver.querySelector('.close').addEventListener('click', function() {
-       popOver.classList.remove('show-popover');
+     lightbox.querySelector('.close').addEventListener('click', function() {
+       lightbox.classList.remove('show-popover');
   });
 
     document.querySelector('.sure').addEventListener('click', function() {
