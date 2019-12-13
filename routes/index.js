@@ -96,8 +96,8 @@ router.get('/portfolioData/:target', (req, res) => {
 			// render our page
 			res.render('home', {art: result });
 			 // whatever page and data you're rendering
-		});
-	});
+		})
+	})
 });
 
 module.exports = router;
