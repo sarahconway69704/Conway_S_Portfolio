@@ -84,7 +84,10 @@ router.get('/portfolioData/:target', (req, res) => {
 
     console.log(result); //this should be the database now
 
-    res.json(result[0]); //send that row back to the calling function <3
+	res.json(result[0]);
+	res.render('home', {art: result });
+	res.render('index');
+	res.render('layout'); //send that row back to the calling function <3
   });
 });
 
