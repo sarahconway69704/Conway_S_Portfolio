@@ -94,7 +94,7 @@ router.get('/portfolioData/:target', (req, res) => {
 			console.log(result); // this should be your database query result
 	
 			// render our page
-			res.json(result);
+			res.json(result[0]);
 			 // whatever page and data you're rendering
 		})
 	})
