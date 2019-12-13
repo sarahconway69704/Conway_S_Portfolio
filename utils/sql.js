@@ -7,7 +7,7 @@ host: config.host,
 user: config.uname,
 password: config.pword,
 database: config.dbase,
-connectionLimit : 100,
+connectionLimit : 20,
 queueLimit : 100,
 waitForConnections : true
 });
