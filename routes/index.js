@@ -50,7 +50,7 @@ connect.getConnection((err, connection) => {
 	
 	if (err) { return console.log(err.message); }
 
-	let query = `SELECT * FROM tbl_work WHERE ID="${req.params.target}"`;
+	let query = `SELECT * FROM tbl_work`;
 	
 	connect.query(query, (err, result) => {
 		connection.release(); // send this connection back to the pool

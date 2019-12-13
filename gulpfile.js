@@ -6,6 +6,6 @@ function compile(done) {
     .pipe(sass())
     .on("error", sass.logError)
     .pipe(gulp.dest("css"))
-};
+}
 
-exports.compile = compile;
+exports.compile = compile
